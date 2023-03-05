@@ -1,0 +1,93 @@
+touch
+    Se verifica sa nu fie numele luat.
+    Se adauga in arborele de cautare asociat folderului curent respectand proprietatile.
+mkdir
+    Se verifica sa nu fie numele luat.
+    Analog touch, doar ca pentru subdirectoare.
+ls
+    Printeaza in ordine lexicografica elementele
+rm
+    Pentru frunze, se sterg direct din arbore.
+    Pentru noduri cu un singur fiu, se muta fiul in locul parintelui si se sterge.
+    Pentru noduri cu 2 fii, se cauta in subarborii aferenti cel mai din stanga nod
+    din subarborele drept si cel mai din dreapta din subarborele stang.
+    Se copiaza numele celui mai apropiat lexicografic de nodul de eliminat si se
+    apeleaza rm pe subarborele asociat.
+rmdir
+    Analog rm.
+cd
+    Se cauta directorul in subdirectoare si daca se gaseste, se schimba directorul curent.
+pwd
+    Se verifica parintii si se afiseaza calea.
+find
+    Se cauta in toate folderele/fisierele unde apare directorul/fisierul dat.
+    Se afiseaza rezultatul corespunzator.
+
+TESTE:
+
+                        = Tema 3 SD SistemFisiere =
+
+[output1.txt]...........................................passed  [04/135]
+[VALGRIND: FAILED]....................................
+[output2.txt]...........................................passed  [04/135]
+[VALGRIND: FAILED]....................................
+[output3.txt]...........................................passed  [04/135]
+[VALGRIND: FAILED]....................................
+[output4.txt]...........................................passed  [04/135]
+[VALGRIND: FAILED]....................................
+[output5.txt]...........................................passed  [04/135]
+[VALGRIND: FAILED]....................................
+[output6.txt]...........................................passed  [04/135]
+[VALGRIND: FAILED]....................................
+[output7.txt]...........................................passed  [04/135]
+[VALGRIND: FAILED]....................................
+[output8.txt]...........................................passed  [04/135]
+[VALGRIND: FAILED]....................................
+[output9.txt]...........................................passed  [04/135]
+[VALGRIND: FAILED]....................................
+[output10.txt]...........................................passed  [05/135]
+[VALGRIND: FAILED]....................................
+[output11.txt]...........................................passed  [04/135]
+[VALGRIND: FAILED]....................................
+[output12.txt]...........................................passed  [04/135]
+[VALGRIND: FAILED]....................................
+[output13.txt]...........................................passed  [04/135]
+[VALGRIND: FAILED]....................................
+[output14.txt]...........................................passed  [05/135]
+[VALGRIND: FAILED]....................................
+[output15.txt]...........................................passed  [04/135]
+[VALGRIND: FAILED]....................................
+[output16.txt]...........................................passed  [04/135]
+[VALGRIND: FAILED]....................................
+[output17.txt]...........................................passed  [04/135]
+[VALGRIND: FAILED]....................................
+[output18.txt]...........................................failed  [ 0/135]
+
+[output19.txt]...........................................passed  [05/135]
+[VALGRIND: FAILED]....................................
+[output20.txt]...........................................passed  [05/135]
+[VALGRIND: FAILED]....................................
+[output21.txt]...........................................passed  [05/135]
+[VALGRIND: FAILED]....................................
+[output22.txt]...........................................passed  [05/135]
+[VALGRIND: FAILED]....................................
+[output23.txt]...........................................passed  [05/135]
+[VALGRIND: FAILED]....................................
+[output24.txt]...........................................passed  [05/135]
+[VALGRIND: FAILED]....................................
+[output25.txt]...........................................passed  [05/135]
+[VALGRIND: FAILED]....................................
+[output26.txt]...........................................failed  [ 0/135]
+
+[output27.txt]...........................................passed  [05/135]
+[VALGRIND: FAILED]....................................
+[output28.txt]...........................................passed  [05/135]
+[VALGRIND: FAILED]....................................
+[output29.txt]...........................................passed  [05/135]
+[VALGRIND: FAILED]....................................
+[output30.txt]...........................................passed  [05/135]
+[VALGRIND: FAILED]....................................
+
+                                           Total: [125/135]
+
+                                           Bonus: [00/20]
